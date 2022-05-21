@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885157545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.036, y: -0.024, z: -10}
+  m_LocalPosition: {x: -1.106, y: -0.313, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1574482140}
-  lerpSpeed: 1
+  lerpSpeed: 2
 --- !u!1 &1270595679
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,8 +344,8 @@ GameObject:
   - component: {fileID: 1574482140}
   - component: {fileID: 1574482139}
   - component: {fileID: 1574482138}
-  - component: {fileID: 1574482142}
   - component: {fileID: 1574482141}
+  - component: {fileID: 1574482142}
   m_Layer: 20
   m_Name: HeroKnight
   m_TagString: Untagged
@@ -433,12 +433,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574482137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.091, y: -0.038, z: 0}
+  m_LocalPosition: {x: -1.11, y: -0.346, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1574482141
 MonoBehaviour:
@@ -449,9 +449,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1574482137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6453d48b10f44164b14699facbd453b, type: 3}
+  m_Script: {fileID: 11500000, guid: abd146093740c5d43b5909c7913f3109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  moveSpeed: 0
 --- !u!61 &1574482142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -465,7 +467,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006759286, y: 0.0019723102}
+  m_Offset: {x: -0.00078547, y: -0.004722208}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -476,7 +478,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07331252, y: 0.072705716}
+  m_Size: {x: 0.057988882, y: 0.07673079}
   m_EdgeRadius: 0
 --- !u!1 &1885521708
 GameObject:
@@ -489,7 +491,6 @@ GameObject:
   - component: {fileID: 1885521711}
   - component: {fileID: 1885521710}
   - component: {fileID: 1885521709}
-  - component: {fileID: 1885521713}
   m_Layer: 20
   m_Name: Skeleton
   m_TagString: Untagged
@@ -582,34 +583,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1885521713
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885521708}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.050392576, y: -0.090926155}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.24, y: 0.32}
-    newSize: {x: 0.24, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.10258657, y: 0.13814768}
-  m_EdgeRadius: 0
 --- !u!1 &1964519401
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +689,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1964519405
 BoxCollider2D:

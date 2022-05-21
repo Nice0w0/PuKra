@@ -6,7 +6,7 @@ using UnityEngine;
     public class CameraFollow : MonoBehaviour
     {
         public Transform target;
-        public float lerpSpeed = 0.15f;
+        public float lerpSpeed = 1.0f;
 
         private Vector3 offset;
 
