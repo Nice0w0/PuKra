@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         transform.Translate(moveDelta * Time.deltaTime);
 
         //animation เดินแล้วหยุด
-        if(moveDelta.x == 0)
+        if(moveDelta.x+y == 0)
         {
             animator.SetBool("Speed", false);
         }
@@ -43,7 +43,6 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("Speed", true);
         }
-
 
     }
 }
