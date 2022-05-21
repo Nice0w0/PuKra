@@ -8,9 +8,12 @@ public class Player : MonoBehaviour
 
     private Vector3 moveDelta;
 
+    private Animator animator;
+
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
     
     private void FixedUpdate()
@@ -30,6 +33,16 @@ public class Player : MonoBehaviour
 
         //ให้ตัวละครเดินได้ WASD
         transform.Translate(moveDelta * Time.deltaTime);
+
+        //animation เดินแล้วหยุด
+        if(moveDelta.x == 0)
+        {
+            animator.SetBool("Speed", false);
+        }
+        else
+        {
+            animator.SetBool("Speed", true);
+        }
 
 
     }
