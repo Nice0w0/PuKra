@@ -50,13 +50,18 @@ namespace Cainos.PixelArtTopDown_Basic
                 dir.y = -1;
                 animator.SetInteger("Direction", 0);
             }
-
             dir.Normalize();
             animator.SetBool("Speed", dir.magnitude > 0);
 
-            
-           
+
+       
+
         }
+
+
+
+
+
         private void FixedUpdate()
         {
             float x = Input.GetAxisRaw("Horizontal");
